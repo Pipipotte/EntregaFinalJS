@@ -20,7 +20,6 @@ function actualizarPosicion (e){
 } 
 
 const VaciarCarrito = document.querySelector("#btnVaciarCarrito");
-const FinalizarCompra = document.querySelector("#btnFinalizarCompra");
 const botones = document.querySelectorAll(".btn");
 
 botones.forEach(boton => {
@@ -99,37 +98,3 @@ VaciarCarrito.addEventListener('mouseout', () => {
 });
 
 document.addEventListener("mousemove", actualizarPosicion);
-
-
-
-FinalizarCompra.addEventListener('click', ()=>{
-
-
-
-    console.log("muestro cartel");
-    gsap.fromTo(cartel, {
-        y: 100, // posición inicial
-        visibility: "hidden",
-        opacity: 0,
-        }, {
-        y: -100, // posición final
-        visibility: "visible",
-        opacity: 1,
-        duration: 1, // duración de la animación en segundos
-        ease: "back.out(1.7)"
-        });
-    setTimeout(() => {
-        console.log("transición cartel")
-        gsap.to(cartel, { 
-            opacity: 0,
-            duration: 1
-        });
-    }, 2000);
-    setTimeout(() => {
-        console.log("escondo cartel")
-        gsap.to(cartel, { 
-            duration: 1,
-            visibility: "hidden"
-        });
-    }, 3000);
-});
