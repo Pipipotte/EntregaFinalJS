@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega Javascript | Avilés Joaquín </title>
+    <link rel="shortcut icon" href="./media/shortcutIcon2.svg">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="caratula">
+        <div class="contenedor">
+            <div class="preEntrega">
+                <h1>entrega final</h1>
+            </div>
+            <div class="simulador">
+                <img src="./media/simulador.svg" alt="simulador">
+            </div>
+            <div class="frame">
+                <img src="./media/Frame.svg" alt="marco contenedor">
+            </div>
+            <div class="servicioPregunta" >
+                <h2>
+                    ¿Qué servicio desea adquirir?
+                </h2>
+            </div>
+                <div class="serviciosContenedor" id="servicios">
+                <div class="serviciosDiv" id="servicioBranding">
+                    <h3>Branding</h3>
+                    <p id="servicioBrandingPrecio">$1000</p>
+                    <div class="serviciosDivBtn" >                    
+                        <button class="btn"  id="btnClickServiciosBrandingCarrito" ><p>Agregar al carrito</p></button>
+                    </div>
+                </div>
+                <div class="serviciosDiv" id="servicioFrontend">
+                    <h3>Frontend</h3>
+                    <p id="servicioFrontendPrecio">$1000</p>
+                    <div class="serviciosDivBtn">                    
+                        <button class="btn"  id="btnClickServiciosFrontendCarrito" ><p>Agregar al carrito</p></button>
+                    </div>
+                </div>
+                <div class="serviciosDiv" id="servicioUxUi">
+                    <h3>Ux/Ui</h3>
+                    <p id="servicioUxUiPrecio">$1000</p>
+                    <div class="serviciosDivBtn">                    
+                        <button class="btn" id="btnClickServiciosUxUiCarrito" ><p>Agregar al carrito</p></button>
+                    </div>
+                </div>
+                </div>
+                <br>
+
+                <div class="carritoContenedor">
+                    <div class="carritoContenedorDiv" >
+                        <h2>Carrito</h2>
+                        <div class="divCarrito" id="divCarrito" >
+                        </div>
+                    </div>
+                </div>
+                <div class="carritoTotal">
+                    <h3>Total</h3>
+                    <div id="carritoTotal" >
+
+                    </div>
+                </div>
+                <div class="carritoTotalDiv">
+                    <button class="btn" id="btnVaciarCarrito" ><p>Vaciar carrito</p></button>
+                    <button class="btn" id="btnFinalizarCompra" ><p>Finalizar compra</p></button>
+                </div>
+                <div id="consejo"></div>
+        </div>
+    </div>
+    <div id="cartel">
+        <p>¡Gracias por tu compra!</p>
+    </div>
+    <div id="cursor1" >
+    </div>
+    <div id="cursor2" >
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="animaciones.js"></script>
+</body>
+</html>
